@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    margin:0;
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
+
+button{
+    font-size:1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: #F7ECDE;
+    background-color:#54BAB9 
+
+}
+
+button:hover{
+    background-color:#408d8c;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.color-acento{
+    color:#54BAB9
+}
+
+header{
+    background-color:#E9DAC1;
+
+}
+
+header .logo{
+    margin:0;
+    padding:25px 30px;
+    font-size:1.45em;
+    font-weight: bold;
+    color: #54BAB9;
+    
+}
+
+header .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+header nav{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+   
+}
+
+header a:hover{
+    color: #54BAB9;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg, rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/pexels-vincent-gerbouin-1174732.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color:#F7ECDE;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-proya .container{
+    text-align: center;
+    color:#F7ECDE;
+    padding: 200px 12px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    )
+    ,url(/img/pexels-pixabay-46148.jpg);
+}
+}
+
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 150px 12px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    color: #F7ECDE;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    )
+    ,url(/img/pexels-lisa-fotios-3716515.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    )
+    ,url(/img/pexels-guilherme-rossi-1815384.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    )
+    ,url(/img/pexels-christina-morillo-1181244.jpg);
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+/* FOOTER */
+footer{
+    background: #54BAB9 ;
+    padding-bottom: 0.1px;
+    color: #E9DAC1;
+}
+
+.footer-content{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color:#F7ECDE;
+}
+
+.contact-us{
+    width: 40%;
+    color: #E9DAC1;
+}
+
+.brand{
+    font-weight: 500;
+    font-size:40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social-media{
+    width:50%;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.social-media-icon{
+    display:inline-block;
+    margin-left: 20px;
+    width:60px;
+    height: 60px;
+    border: 1px solid #F7ECDE;
+    border-radius: 50%;
+    text-align: center;
+    color: #E9DAC1;
+}
+
+.social-media-icon:hover{
+    background: #54BAB9;
+    color:#F7ECDE;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #54BAB9;
+    margin-bottom:60px;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-proya h2{
+        margin-top: 0px;
+    }
+
+    #somos-proya .img-container{
+        background-image: url("media/somos-proya.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(/img/pexels-lisa-fotios-3716515.jpg);
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(/img/pexels-guilherme-rossi-1815384.jpg);
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(/img/pexels-christina-morillo-1181244.jpg);
+    }
+    @media (min-width: 1200px) {
+        #caracteristicas{
+            background-position-x: calc(100vw - 800px);
+        }
+    }
